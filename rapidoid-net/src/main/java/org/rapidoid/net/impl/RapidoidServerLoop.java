@@ -42,7 +42,7 @@ import java.util.Set;
 @Since("2.0.0")
 public class RapidoidServerLoop extends AbstractLoop<Server> implements Server, TCPServerInfo {
 
-	private static final int MAX_PENDING_CONNECTIONS = 16 * 1024;
+	private static final int MAX_PENDING_CONNECTIONS = 32 * 1024;
 
 	private volatile RapidoidWorker[] ioWorkers;
 
